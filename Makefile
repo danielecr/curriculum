@@ -14,6 +14,7 @@ resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
 
 cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+	cp danielecruciani/cv.pdf cv_daniele.cruciani_en.pdf
 
 coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
