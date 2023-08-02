@@ -21,3 +21,6 @@ coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
 
 clean:
 	rm -rf $(EXAMPLES_DIR)/*.pdf
+
+upload:
+	scp danielecruciani/cv.pdf smartango@cp.server313.com:/home/smartango/www/www/sites/default/files/cv_daniele.cruciani_en.pdf
